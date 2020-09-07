@@ -26,11 +26,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: cs302F2020_syllabus.tex
+          root_file: cs102F2020_syllabus.tex
       # Release a PDF of the CV
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          files: cs302F2020_syllabus.pdf
+          files: cs102F2020_syllabus.pdf
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
